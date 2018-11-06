@@ -3,9 +3,9 @@ var raspi = require('raspi-io'),
 	board = new five.Board({
 		io: new raspi()
 	}),
-	//motors = {};
+	motors = {};
 
-/*
+
 function setup() {
 	board.on('ready', function() {
 	  motors = {
@@ -25,7 +25,7 @@ function setup() {
 		})
 	  };
 	});
-}*/
+}
 
 function forward() {
 	motors.left.forward(255);
